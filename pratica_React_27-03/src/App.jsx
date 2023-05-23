@@ -1,6 +1,6 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
- import NavBar from "./navBar/NavBar";
+import NavBar from "./navBar/NavBar";
 
  import { useContext } from "react";
  import { ThemeContext } from "./context/ThemeContext";
@@ -10,7 +10,11 @@ function App() {
   return (
     <div className={`App ${theme === 'Light' ? 'light-theme': ''}`}>
       <NavBar/>
-      <h1>Prática React</h1>
+      <h1 className={`
+        flex justify-center
+        text-5xl
+        my-10
+      `}>Prática React</h1>
       <Outlet/>
     </div>
   );
