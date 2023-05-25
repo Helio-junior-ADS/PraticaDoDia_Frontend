@@ -5,10 +5,32 @@ const Contatodor = () => {
 
   return (
     <div>
-      <h1>Contador {count}</h1>
-      <button onClick={()=>setCount(count + 1)}>+</button>
-      <button onClick={()=>setCount(count - 1)}>-</button>
-      <button onClick={()=>setCount(count === 1)}>zero</button>
+      <div
+        className={`
+        flex flex-col items-center
+        w-96 m-auto rounded-lg      
+        bg-red-900  text-white              
+      `}
+      >
+        <h1 className="my-2 text-2xl">Contador {count}</h1>
+        <div className="my-2">
+          <button className={`
+            bg-black
+            px-3 mx-2
+            rounded
+          `} onClick={() => setCount(count + 1)}>+</button>
+          <button className={`
+            bg-black
+            px-3 mx-2
+            rounded
+          `} onClick={() => setCount(count - 1)}>-</button>
+          <button className={`
+            bg-black
+            px-3 mx-2
+            rounded
+          `} onClick={() => setCount(count === 1)}>zero</button>
+        </div>
+      </div>
     </div>
   );
 };

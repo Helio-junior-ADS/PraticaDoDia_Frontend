@@ -6,18 +6,18 @@ const Contact = () => {
     <div
       className={`
       flex flex-col items-center 
-      w-full    
+      w-96 m-auto    
     `}
     >
       <div className={`
         text-center
         bg-red-800
         w-96 rounded-lg
+        py-5
       `}>
         <h1
           className={`          
-          text-4xl text-white
-          my-10
+          text-4xl text-white          
           `}
         >
           Contact
