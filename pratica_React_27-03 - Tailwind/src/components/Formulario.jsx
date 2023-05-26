@@ -28,7 +28,7 @@ const Formulario = () => {
       >
         <h1 className="text-center py-2 text-2xl">Formulário</h1>
         <div>
-          <label className="ml-2" htmlFor="firstName">First Name: </label>
+          <label htmlFor="firstName">First Name: </label>
         </div>
         <input
           className={`
@@ -43,7 +43,7 @@ const Formulario = () => {
         />
 
         <div>
-          <label className="ml-2" htmlFor="lastName">Last Name: </label>
+          <label htmlFor="lastName">Last Name: </label>
         </div>
         <input
           className={`
@@ -58,7 +58,7 @@ const Formulario = () => {
         />
 
         <div>
-          <label className="ml-2" htmlFor="age">Age: </label>
+          <label htmlFor="age">Age: </label>
         </div>
         <input
            className={`
