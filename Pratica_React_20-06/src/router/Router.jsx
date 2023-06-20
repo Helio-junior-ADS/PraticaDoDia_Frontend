@@ -7,10 +7,8 @@ import Contact from "../components/Contact";
 import DetailsContact from "../components/DetailsContact";
 import Contador from "../components/Contador";
 import Formulario from "../components/Formulario";
-import GitHub from '../api/GitHub';
+import GitHub from "../api/GitHub";
 import Theme from "../components/Theme";
-import Loguin from "../components/Loguin";
-
 
 const router = createBrowserRouter([
   {
@@ -25,27 +23,29 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
-      },{
-        path:'/contact/:id',
-        element:<DetailsContact/>
-      },{
-        path:'/contador',
-        element:<Contador/>
-      },{
-        path:'/formulario',
-        element:<Formulario/>
-      },{
-        path:'/github',
-        element:<GitHub/>
-      },{
-        path:'/theme',
-        element:<Theme/>
-      },{
-        path:'/login',
-        element:<Loguin/>
-      }
+      },
+      {
+        path: "/contact/:id",
+        element: <DetailsContact />,
+      },
+      {
+        path: "/contador",
+        element: <Contador />,
+      },
+      {
+        path: "/formulario",
+        element: <Formulario />,
+      },
+      {
+        path: "/github",
+        element: <GitHub />,
+      },
+      {
+        path: "/theme",
+        element: <Theme />,
+      },
     ],
   },
 ]);
 
-export default router
+export default router;

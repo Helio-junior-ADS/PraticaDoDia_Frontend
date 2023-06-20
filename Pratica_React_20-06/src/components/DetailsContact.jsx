@@ -1,15 +1,15 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const DetailsContact = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
+  const nav = useNavigate();
   const red = () => {
-    return navigate("/contact");
+    return nav("/contact");
   };
   return (
     <div>
-      <h1>Informações do Contato {id}</h1>
+      <h1>Informaões do Contato {id}</h1>
       <button onClick={red}>SEND</button>
     </div>
   );
