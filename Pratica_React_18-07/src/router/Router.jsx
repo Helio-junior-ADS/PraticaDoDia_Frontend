@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App";
-import Error from "../components/Error";
+import Error404 from "../components/Error404";
 import Home from "../components/Home";
 import Contact from "../components/Contact";
 import DetailsContact from "../components/DetailsContact";
@@ -12,9 +12,9 @@ import Theme from "../components/Theme";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-    errorElement: <Error />,
+    path:'/',
+    element:<App/>,
+    /* errorElement: <Error404 /> */
     children: [
       {
         path: "/home",
@@ -23,27 +23,22 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
-      },
-      {
-        path: "/contact/:id",
-        element: <DetailsContact />,
-      },
-      {
-        path: "/contador",
-        element: <Contador />,
-      },
-      {
-        path: "/formulario",
-        element: <Formulario />,
-      },
-      {
-        path: "/github",
-        element: <GitHub />,
-      },
-      {
-        path: "/theme",
-        element: <Theme />,
-      },
+      },{
+        path:'/contact/:id',
+        element:<DetailsContact/>
+      },{
+        path:'/contador',
+        element:<Contador/>
+      },{
+        path:'/formulario',
+        element:<Formulario/>
+      },{
+        path:'/github',
+        element:<GitHub/>
+      },{
+        path:'/theme',
+        element:<Theme/>
+      }
     ],
   },
 ]);

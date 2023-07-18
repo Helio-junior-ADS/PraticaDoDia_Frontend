@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.light-theme, a .light-theme {
+  background-color: white;
+  color: black;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,11 +21,6 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-.light-theme, .light-theme a {
-  background-color: white;
-  color: black;
 }
 
 @keyframes logo-spin {
