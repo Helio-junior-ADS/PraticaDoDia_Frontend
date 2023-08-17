@@ -10,11 +10,12 @@ import Formulario from "../components/Formulario";
 import GitHub from "../api/GitHub";
 import Theme from "../components/Theme";
 
-const router = createBrowserRouter([
+
+const Router = createBrowserRouter([
   {
-    path:'/',
-    element:<App/>,
-    /* errorElement: <Error404 /> */
+    path: "/",
+    element: <App />,
+    errorElement: <Error404 />,
     children: [
       {
         path: "/home",
@@ -43,4 +44,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default Router;
